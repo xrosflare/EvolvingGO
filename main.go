@@ -12,8 +12,13 @@ func main() {
 	fmt.Println("What's your name ?")
 	fmt.Scan(&name)
 	fmt.Println("Welcome", name, "!")
-	fmt.Print("What's your age ", name, "?")
+	fmt.Println("What's your age ", name, "?")
 	fmt.Scan(&age)
-	fmt.Print("So dear ", name, " you are ", age, " years old")
+	fmt.Println("So dear ", name, " you are ", age, " years old")
+	fmt.Println("So there's ", ageCalc(age), " year left to you to reach the 100 years old birthday")
 
+}
+
+func ageCalc(quantity int) int {
+	return 100 - quantity
 }
